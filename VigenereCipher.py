@@ -1,10 +1,2 @@
-# Ask the user for the message and the key
-message = input("Please enter the message: ")
-message = message.upper().replace(" ", "")
-print("")
-print("Your message is: " +message)
-print("")
-key = input("Please enter the key: ")
-key = key.upper().replace(" ", "")
-print("")
-print("Your key is: " +key)
+# Translate the key into corresponding letter values 0 - 25
+key_map = [ord(i) - 65 for i in key]
